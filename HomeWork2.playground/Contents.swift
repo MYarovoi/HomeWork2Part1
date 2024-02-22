@@ -245,7 +245,19 @@ print("\nРозділ 1.5 Опціонали\n")
 
  */
 
-print("Користувач авторизован: ")
+var userLoggedIn: Bool?
 
-print("Користувач авторизован: ")
+if let isUserLogged = userLoggedIn {
+    print("Користувач авторизован: \(isUserLogged)")
+} else {
+    print("Користувач авторизован: nil")
+}
+
+userLoggedIn = true
+
+if let isUserLogged = userLoggedIn {
+    print("Користувач авторизован: \(isUserLogged)")
+} else {
+    print("Користувач авторизован: nil")
+}
 
